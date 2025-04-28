@@ -1,0 +1,82 @@
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .box {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 10px 10px gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .box img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 10px 10px rgba(226, 215, 215, 0.212);
+    z-index: 13;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    color: gray;
+    background-color: white;
+    padding: 14px;
+    font-size: 2.8em;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .heart-icon:hover {
+    background-color: gray;
+    color: white;
+    transform: scale(1.15);
+  }
+  
+  .heart-animate {
+    animation: bounce 0.5s ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.6);
+    }
+  }
+  
+  .amazon-msg {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+.checked{
+  color:orange;
+}
+  
