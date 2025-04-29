@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage.jsx'
 import ShopPage from './pages/ShopPage.jsx'
 import CartPage from './pages/CartPage.jsx'
 import BlogPage from './pages/BlogPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:'/blog',
         element:<BlogPage/>
+      },
+      {
+        path:'/contact',
+        element:<ContactPage/>
       },
     ]
   }

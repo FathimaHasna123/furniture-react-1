@@ -182,39 +182,42 @@ function Home() {
 
 {/* 4 */}
 
-<div class="mt-20 py-12 px-40 grid gap-8 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-items-center items-center text-center">
+<div class="mt-20 py-12 px-40 grid gap-8 xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-items-center items-center text-center">
 
-<div class="flex md:flex-row items-center text-center space-x-4">
+<div class="flex sm:flex-row flex-col items-center text-center space-x-4">
   <img src="https://goldenrod-mosquito-182974.hostingersite.com/wp-content/uploads/2018/10/free-shipping.png" alt="Free Shipping" class="h-[50px]" />
   
-  <div class="md:flex md:flex-col md:text-left">
-    <h1 class="text-[18px] font-bold text-black">Free Shipping</h1>
-    <p class="text-[16px] text-gray-500 font-thin">On all orders over $200</p>
+  <div class="md:flex md:flex-col md:text-left ">
+  <h1 class="text-[16px] md:font-bold text-black sm:text-[18px] whitespace-nowrap">Free Shipping</h1>
+  <p class="text-[14px] text-gray-500 font-thin sm:text-[16px]  whitespace-nowrap">On all orders over $200</p>
   </div>
 </div>
 
 
-  <div class="flex flex-row items-center text-center space-x-4">
+  <div class="flex  sm:flex-row flex-col  items-center text-center space-x-4">
     <img src="https://goldenrod-mosquito-182974.hostingersite.com/wp-content/uploads/2018/10/support.png" alt="Dedicated Support" class="h-[50px]" />
-    <h1 class="text-[18px] font-bold text-black">Dedicated Support<br />
-      <span class="text-[16px] text-gray-500 font-thin">Quick response 24/7</span>
-    </h1>
+    <div class="md:flex md:flex-col md:text-left ">
+    <h1 class="text-[16px] md:font-bold text-black sm:text-[18px] whitespace-nowrap">Dedicated Support</h1>
+      <p class="text-[14px] text-gray-500 font-thin sm:text-[16px]  whitespace-nowrap">Quick response 24/7</p>
+    </div>
   </div>
 
   
-  <div class="flex flex-row items-center text-center space-x-4">
+  <div class="flex  sm:flex-row flex-col  items-center text-center space-x-4">
     <img src="https://goldenrod-mosquito-182974.hostingersite.com/wp-content/uploads/2018/10/money-back.png" alt="Money-Back Guarantee" class="h-[50px]" />
-    <h1 class="text-[18px] font-bold text-black">Money-Back Guarantee<br />
-      <span class="text-[16px] text-gray-500 font-thin">Worry-free shopping</span>
-    </h1>
+    <div class="md:flex md:flex-col md:text-left ">
+    <h1 class="text-[16px] md:font-bold text-black sm:text-[18px] whitespace-nowrap">Money-Back Guarantee </h1>
+    <p class="text-[14px] text-gray-500 font-thin sm:text-[16px]  whitespace-nowrap">Worry-free shopping</p>
+    </div>
   </div>
 
  
-  <div class="flex flex-row items-center text-center space-x-4">
+  <div class="flex  sm:flex-row flex-col  items-center text-center space-x-4">
     <img src="https://goldenrod-mosquito-182974.hostingersite.com/wp-content/uploads/2018/10/free-shipping.png" alt="Money-Back Guarantee" class="h-[50px]" />
-    <h1 class="text-[18px] font-bold text-black">Money-Back Guarantee<br />
-      <span class="text-[16px] text-gray-500 font-thin">Worry-free shopping</span>
-    </h1>
+    <div class="md:flex md:flex-col md:text-left ">
+    <h1 class="text-[16px] md:font-bold text-black sm:text-[18px] whitespace-nowrap">Money-Back Guarantee</h1>
+    <p class="text-[14px] text-gray-500 font-thin sm:text-[16px]  whitespace-nowrap">Worry-free shopping</p>
+    </div>
   </div>
 
 </div>
