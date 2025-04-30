@@ -12,6 +12,8 @@ import CartPage from './pages/CartPage.jsx'
 import BlogPage from './pages/BlogPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -37,6 +39,7 @@ const router = createBrowserRouter([
         path:'/contact',
         element:<ContactPage/>
       },
+     
     ]
   }
 ])
