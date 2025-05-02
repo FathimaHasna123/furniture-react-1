@@ -11,6 +11,10 @@ import ShopPage from './pages/ShopPage.jsx'
 import CartPage from './pages/CartPage.jsx'
 import BlogPage from './pages/BlogPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import WishlistPage from './pages/WishlistPage.jsx'
+import UserPage from './pages/UserPage.jsx'
+
+
 
 
 
@@ -39,6 +43,14 @@ const router = createBrowserRouter([
         path:'/contact',
         element:<ContactPage/>
       },
+      {
+        path:'/wishlist',
+        element:<WishlistPage/>
+      },
+      {
+        path:'/user',
+        element:<UserPage/>
+      }
      
     ]
   }
