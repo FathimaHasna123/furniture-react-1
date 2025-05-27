@@ -10,14 +10,13 @@ function Navbar() {
   const { pathname } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const [isCartOpen, setIsCartOpen] = useState(false)
+ 
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
   const closeMenu = () => setIsMenuOpen(false)
   const openSearchModal = () => setIsSearchOpen(true)
   const closeSearchModal = () => setIsSearchOpen(false)
-  const openCartSidebar = () => setIsCartOpen(true)
-  const closeCartSidebar = () => setIsCartOpen(false)
+ 
 
   return (
     <div className="w-full">
@@ -44,9 +43,7 @@ function Navbar() {
             </button>
             <div className="sm:hidden flex justify-end relative sm:left-0 left-[180px] gap-3">
               <Link to="/wishlist"><FaRegHeart className="h-5 w-5 text-gray-800 hover:text-blue-800" /></Link>
-              <button onClick={openCartSidebar}>
-                <FiShoppingCart className="h-5 w-5 text-gray-800 hover:text-blue-800" />
-              </button>
+            
             </div>
           </div>
 
@@ -60,7 +57,6 @@ function Navbar() {
             {[
               { path: '/', label: 'Home' },
               { path: '/shop', label: 'Shop' },
-              { path: '/cart', label: 'Cart' },
               { path: '/blog', label: 'Blog' },
               { path: '/contact', label: 'Contact' },
             ].map(({ path, label }) => (
@@ -84,9 +80,11 @@ function Navbar() {
       <span className="absolute left-1/2 -translate-x-1/2 mt-2 w-28 rounded bg-gray-300 text-[16px] text-center py-2 opacity-0 group-hover:opacity-100 transition-opacity">
         Login/Register</span>
     </div>
-            <button onClick={openCartSidebar}>
-              <FiShoppingCart className="h-5 w-5 hover:text-blue-800" />
-            </button>
+    <Link to="/cart">
+  <FiShoppingCart className="h-5 w-5 hover:text-blue-800" />
+</Link>
+
+           
           </div>
         </div>
       </nav>
@@ -147,22 +145,7 @@ function Navbar() {
         </div>
       )}
 
-      {/* Cart Sidebar Modal */}
-      {isCartOpen && (
-        <div className="fixed inset-0 z-[4000] flex justify-end bg-black bg-opacity-40">
-          <div className="w-80 h-full bg-white p-4 shadow-lg overflow-y-auto relative">
-            <button
-              onClick={closeCartSidebar}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-600"
-              aria-label="Close cart sidebar">
-              <IoMdClose size={24} />
-            </button>
-            <h2 className="text-[18px]  mb-4">SHOPPING CART</h2>
-            <div className="w-full h-[1px] bg-gray-300 mb-4"></div>
-           
-          </div>
-        </div>
-      )}
+    
     </div>
   );
 }
