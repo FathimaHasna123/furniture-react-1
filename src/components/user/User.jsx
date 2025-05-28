@@ -7,11 +7,12 @@ import { BsFillEyeSlashFill } from "react-icons/bs";
 
 function User  () {
     const [form] = Form.useForm()
-    const {mutate:Create} = useCreateUser()
+    const {mutate:CreateUser} = useCreateUser()
 
 
     const onFinish = (values) => {
-        Create(values, {
+      console.log("aaaaaa")
+        CreateUser(values, {
             onSuccess() {
                 message.success('Created successfully');
                 setAddModal(false);
