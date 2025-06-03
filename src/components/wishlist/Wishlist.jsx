@@ -3,7 +3,7 @@ import { GiShoppingCart } from "react-icons/gi";
 import { FaFacebookF, FaPinterestP, FaTwitter, FaWhatsapp } from "react-icons/fa6";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 import { MdEmail } from "react-icons/md";
-import { useQuery } from '@tanstack/react-query';
+import { useQuery } from 'react-query';
 import { getWishlist } from '../../utils/wishlist/wishlistApi';
 
 function Wishlist() {
