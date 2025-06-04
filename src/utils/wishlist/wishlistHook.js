@@ -1,4 +1,4 @@
-import { useMutation } from "@tanstack/react-query"
+import { useMutation } from 'react-query';
 import { createWishlist, deleteWishlist} from "./wishlistApi"
 
 
@@ -12,3 +12,4 @@ export const useCreateWishlist = ()=>{
 export const useDeleteWishlist = ()=>{
     return useMutation((id)=>deleteWishlist(id))
 }
+
