@@ -25,7 +25,7 @@ function Home() {
   {/* Desktop section */}
   <div className="hidden md:block">
     <Parallax
-      strength={700}
+      strength={800}
       bgImage="https://goldenrod-mosquito-182974.hostingersite.com/wp-content/uploads/2025/04/145504.webp"
       bgImageAlt="Furniture Background">
       <div className="w-full min-h-[90vh] flex items-center justify-center bg-cover bg-center relative">
