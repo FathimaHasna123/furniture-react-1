@@ -8,7 +8,7 @@ export const getCart = ()=>{
 }
 
 export const createCart =(data)=>{
-    return apiClient.post('/cartApi',data)
+    return apiClient.post('/cartApi/',data)
 }
 
 export const updateCart =(data)=>{
