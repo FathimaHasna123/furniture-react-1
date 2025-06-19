@@ -25,7 +25,7 @@ function Shop() {
 
     if (!isAlreadyClicked) {
       const wishlistData = {
-        productId: item.id,
+        productName: item.id,
         userId: 1,
       }
 

@@ -4,7 +4,7 @@ import { apiClient } from "../api"
 
 
 export const getWishlist = ()=>{
-    return apiClient.get('/wishlistApi')
+    return apiClient.get('/wishlistApi/')
 }
 
 export const createWishlist = (data)=>{
